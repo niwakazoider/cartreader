@@ -821,6 +821,8 @@ void outputNES() {
   println_Msg(F(""));
   display_Update();
 
+  base64_dump(fileNES, "NES");
+
   calcCRC(outputFile, (prg + chr) * 1024, NULL, crcOffset);
   LED_RED_OFF;
   LED_GREEN_OFF;

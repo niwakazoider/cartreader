@@ -1,11 +1,11 @@
 //******************************************
 // CHOOSE HARDWARE VERSION
 //******************************************
-#define HW4
-//#define HW3
+//#define HW4
+#define HW3
 //#define HW2
 //#define HW1
-//#define SERIAL_MONITOR
+#define SERIAL_MONITOR
 
 #if defined(HW4)
 #define enable_LCD

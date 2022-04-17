@@ -651,6 +651,8 @@ void readROM_GB() {
 
   // Close the file:
   myFile.close();
+
+  base64_dump(fileName, "GB");
 }
 
 unsigned int calc_checksum_GB (char* fileName, char* folder) {

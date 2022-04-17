@@ -73,3 +73,4 @@ Neopixel lib: https://github.com/adafruit/Adafruit_NeoPixel
 Rotary Enc lib: https://github.com/mathertel/RotaryEncoder    
 SI5351 lib: https://github.com/etherkit/Si5351Arduino        
 RTC lib: https://github.com/adafruit/RTClib      
+base64 lib: https://github.com/Densaugeo/base64_arduino    
