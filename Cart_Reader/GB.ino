@@ -788,6 +788,8 @@ void readSRAM_GB() {
     print_Msg(folder);
     println_Msg(F("/"));
     display_Update();
+
+    base64_dump(fileName, "GB|SAVE");
   }
   else {
     print_Error(F("Cart has no SRAM"), false);

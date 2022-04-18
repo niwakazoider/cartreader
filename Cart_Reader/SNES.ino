@@ -1699,6 +1699,8 @@ void readSRAM () {
   print_Msg(folder);
   println_Msg(F("/..."));
   display_Update();
+
+  base64_dump(fileName, "SNES|SAVE");
 }
 
 // Check if the SRAM was written without any error

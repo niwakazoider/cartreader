@@ -3034,6 +3034,13 @@ void readSram(unsigned long sramSize, byte flashramType) {
   print_Msg(folder);
   println_Msg(F("/"));
   display_Update();
+
+  if (saveType == 4) {
+    base64_dump(fileName, "N64|SAVE4");
+  }
+  if (saveType == 1) {
+    base64_dump(fileName, "N64|SAVE1");
+  }
 }
 
 unsigned long verifySram(unsigned long sramSize, byte flashramType) {

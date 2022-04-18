@@ -1007,6 +1007,8 @@ void readSRAM_GBA(boolean browseFile, unsigned long sramSize, uint32_t pos) {
   // Close the file:
   myFile.close();
 
+  base64_dump(fileName, "GBA|SAVE");
+
   // Signal end of process
   println_Msg(F("Done"));
   display_Update();

@@ -3205,6 +3205,8 @@ void readRAM() {
       println_Msg(F(""));
       display_Update();
 
+      base64_dump(fileName, "NES|SAVE");
+
       if ((mapper == 16) || (mapper == 159))
         calcCRC(fileName, eepsize, NULL, 0);
       else
